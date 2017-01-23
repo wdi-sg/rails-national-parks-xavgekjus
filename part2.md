@@ -21,7 +21,7 @@ Make `ranger#destroy` warn the user with an alert before removing the ranger, si
 
 Documentation on this functionality can be found here:
 
-http://api.rubyonrails.org/v4.0.0/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to
+http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to
 
 ###Support ranger creation from `park#new` `park#edit`
 
