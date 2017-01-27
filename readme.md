@@ -7,7 +7,7 @@ Let's create an app to showcase these wonderful parks.
 ##Getting Started
 
 * Fork and clone this repository
-* Follow the recommended process for creating your Rails app. 
+* Follow the recommended process for creating your Rails app.
 
 ##Components
 
@@ -65,11 +65,6 @@ Let's create an app to showcase these wonderful parks.
   * Add controllers, actions, and views where appropriate
   * Add functionality for each controller action
   * Test as needed
-
-## Styling
-
-* Style the pages. Play around with adding a navigation bar or carousels.
-* If using Bootstrap, use the [Bootstrap form helper](https://github.com/bootstrap-ruby/rails-bootstrap-forms). Makes Bootstrap forms easily.
 
 ## Bonuses
 
