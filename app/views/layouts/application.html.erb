@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>RailsNationalParks</title>
     <%= csrf_meta_tags %>
 
@@ -9,8 +13,23 @@
   </head>
 
   <body>
-    <h1><%= link_to 'National Parks', root_path %></h1>
-    <hr>
-    <%= yield %>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <h1><%= link_to 'National Parks', root_path %></h1>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="notice">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-info" role="alert">
+            <%= value %>
+          </div>
+        <% end %>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

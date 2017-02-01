@@ -14,6 +14,7 @@
   <%= cl_image_tag(@park.picture, :width => 200, :height => 200, :crop => :fill) %>
 </p>
 
-<%= link_to 'Edit', edit_park_path(@park) %> |
-<%= link_to 'Destroy', @park, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Edit', edit_park_path(@park), class: 'btn btn-default' %>
+<%= link_to 'Destroy', @park, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+<br>
 <%= link_to 'Back', parks_path %>
