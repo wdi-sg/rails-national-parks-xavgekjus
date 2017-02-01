@@ -36,7 +36,7 @@ Let's create an app to showcase these wonderful parks.
 | PUT /parks/3 | update an existing park (id=3) | parks | update (no view) |
 | DELETE /parks/3 | delete an existing park (id=3) | parks | destroy (no view) |
 
-**Remember:** you can list all routes by running `rake routes` at the command line.
+**Remember:** you can list all routes by running `rails routes` at the command line.
 
 ##Recommended Process
 
@@ -45,14 +45,14 @@ Let's create an app to showcase these wonderful parks.
 * Fork and clone this repo
 * cd into the directory
 * Create app `rails new ./ -T -d postgresql`
-* Create database `rake db:create`
+* Create database `rails db:create`
 * Test app
   * Run server `rails s`
 
 ###Build specific functionality
 
 * Create model `rails g model ...` (you write the rest of this command)
-* Migrate `rake db:migrate`
+* Migrate `rails db:migrate`
 * Test models
   * run console `rails c`
   * Try some stuff...
