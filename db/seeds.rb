@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+unless Park.find_by(name: 'Botanic Gardens')
+  Park.create!(name: 'Botanic Gardens', description: "A lovely park with lots of Orchids")
+end

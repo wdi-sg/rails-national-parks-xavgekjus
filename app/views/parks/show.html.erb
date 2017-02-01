@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <%= image_tag @park.picture %>
+  <%= cl_image_tag(@park.picture, :width => 200, :height => 200, :crop => :fill) %>
 </p>
 
 <%= link_to 'Edit', edit_park_path(@park) %> |
