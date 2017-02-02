@@ -14,8 +14,6 @@ Time to flesh out the application. Do the following:
 | PUT /rangers/3 | update an existing ranger (id=3) | rangers | update (no view) |
 | DELETE /rangers/3 | delete an existing ranger (id=3) | parks | destroy (no view) |
 
-##Bonus
-
 ###Display a warning when deleting a ranger
 
 Make `ranger#destroy` warn the user with an alert before removing the ranger, since that's a lot of information destroyed in one click: "Are you sure you want to delete this ranger?" Then remove the ranger.
@@ -23,6 +21,9 @@ Make `ranger#destroy` warn the user with an alert before removing the ranger, si
 Documentation on this functionality can be found here:
 
 http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to
+
+
+##Bonus
 
 ###Support ranger creation from `park#new` `park#edit`
 
