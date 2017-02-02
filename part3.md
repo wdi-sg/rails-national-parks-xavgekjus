@@ -26,10 +26,17 @@ http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-li
 
 ###Support ranger creation from `park#new` `park#edit`
 
-The user should be able to add rangers when creating/editing a park. If the ranger already exists he/she should not be duplicated and just be associated. If the ranger doesn't exist, he/she should be created and associated.
+The user should be able to add rangers when creating/editing a park. This can be achieved by adding the `accepts_nested_attributes_for` method to the `Park` model. You'll also want to add `inverse_of:` to the park's ranger association, in order to run any validations that may be on the `Ranger` model.
 
-**Implementation Options**
+```ruby
+class Park < ActiveRecord::Base
+  has_and_belongs_to_many :rangers, inverse_of: :park
+  accepts_nested_attributes_for :rangers
+end
+```
 
-* Text field separated with commas for each ranger: "Brian, Paul, Lenny"
-* Build a complex form, with a separate text field for each ranger
-  * http://guides.rubyonrails.org/form_helpers.html#building-complex-forms
+* http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html
+* http://guides.rubyonrails.org/form_helpers.html#building-complex-forms
+
+**Extension**
+A more complex option would be to have a Text field separated with commas for each ranger: "Brian, Paul, Lenny" etc. Then if the ranger already exists in the system, he/she should not be duplicated and just be associated. If the ranger doesn't exist, he/she should be created and associated.
