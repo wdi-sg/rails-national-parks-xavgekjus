@@ -1,0 +1,18 @@
+<h1>Ranger</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ranger.name %>
+</p>
+
+<strong>Parks:</strong>
+<ul>
+<% @ranger.parks.each do |park| %>
+  <li><%= park.name %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Edit', edit_ranger_path(@ranger), class: 'btn btn-default' %>
+<%= link_to 'Destroy', @ranger, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+<br>
+<%= link_to 'Back', rangers_path %>

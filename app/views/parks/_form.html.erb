@@ -14,5 +14,17 @@
   <%= f.text_field :name %>
   <%= f.text_area :description %>
   <%= f.file_field :picture %>
+  <div class="well">
+    <h3>Rangers</h3>
+    <%= f.fields_for :rangers do |ranger_form| %>
+      <div>
+        <%= ranger_form.text_field :name %>
+        <% unless ranger_form.object.new_record? %>
+          <%= ranger_form.check_box :_destroy %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
   <%= f.submit %>
 <% end %>

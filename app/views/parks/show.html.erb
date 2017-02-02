@@ -10,6 +10,13 @@
   <%= @park.description %>
 </p>
 
+<strong>Rangers:</strong>
+<ul>
+<% @park.rangers.each do |ranger| %>
+  <li><%= ranger.name %></li>
+<% end %>
+</ul>
+
 <p>
   <%= cl_image_tag(@park.picture, :width => 200, :height => 200, :crop => :fill) %>
 </p>

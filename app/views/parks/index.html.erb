@@ -6,6 +6,7 @@
       <th>Name</th>
       <th>Description</th>
       <th>Picture</th>
+      <th>Rangers</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
         <td><%= park.name %></td>
         <td><%= park.description %></td>
         <td><%= park.picture %></td>
+        <td><%= park.rangers.count %></td>
         <td><%= link_to 'Show', park %></td>
         <td><%= link_to 'Edit', edit_park_path(park) %></td>
         <td><%= link_to 'Destroy', park, method: :delete, data: { confirm: 'Are you sure?' } %></td>

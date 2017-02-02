@@ -1,4 +1,5 @@
 class ParksController < ApplicationController
+  before_action :set_rangers, only: [:new, :create, :edit, :update]
   before_action :set_park, only: [:show, :edit, :update, :destroy]
 
   # GET /parks
@@ -13,10 +14,13 @@ class ParksController < ApplicationController
   # GET /parks/new
   def new
     @park = Park.new
+    # we can add an empty new ranger to the collection using build
+    @park.rangers.build
   end
 
   # GET /parks/1/edit
   def edit
+    @park.rangers.build
   end
 
   # POST /parks
@@ -60,9 +64,12 @@ class ParksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def park_params
-      params.require(:park).permit(:name, :description, :picture)
+      params.require(:park).permit(:name, :description, :picture, rangers_attributes: [:id, :name, :_destroy])
     end
 
+    def set_rangers
+      @rangers = Ranger.all
+    end
 
     def upload_file
       # upload file if specified in params
