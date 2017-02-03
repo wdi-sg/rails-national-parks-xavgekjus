@@ -1,7 +1,6 @@
 # National Parks
 
-The National Park Service was created in 1916 by President Woodrow Wilson in order to preserve America's natural and historic scenery. The NPS oversees over 400 units of preserves, monuments, battlefields, and parks. 59 of these units are officially designated as National Parks.
-
+Beginning with the first Tree Planting Campaign in 1963, At National Parks Board (NParks) has come a long way in greening up our island city, with 4 nature reserves and more than 300 parks sprawled across Singapore to date and still growing.  
 Let's create an app to showcase these wonderful parks.
 
 ##Getting Started
