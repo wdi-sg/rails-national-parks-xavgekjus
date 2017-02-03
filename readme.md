@@ -1,6 +1,7 @@
 # National Parks
 
 Beginning with the first Tree Planting Campaign in 1963, At National Parks Board (NParks) has come a long way in greening up our island city, with 4 nature reserves and more than 300 parks sprawled across Singapore to date and still growing.  
+
 Let's create an app to showcase these wonderful parks.
 
 ##Getting Started
