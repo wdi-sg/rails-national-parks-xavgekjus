@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # get 'homepage/index'
 
-  resources :park
+  resources :parks
 
   root 'homepage#index'
 
