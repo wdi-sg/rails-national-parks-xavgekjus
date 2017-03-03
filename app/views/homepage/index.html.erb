@@ -1,2 +1,10 @@
-<h1>Welcome to our list of beautiful gardens</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
+<div id="homepage">
+  <div class="jumbotron">
+    <h1>Welcome to Private Parks</h1>
+    <p><i>Always beautiful, always private</i></p>
+    <p><a class="btn btn-primary btn-m" href="/parks" role="button">Ready to view all Private...Parks?</a></p>
+    <p>
+      <%= link_to "See all parks", parks_path, class: "btn btn-primary"%>
+    </p>
+  </div>
+</div>

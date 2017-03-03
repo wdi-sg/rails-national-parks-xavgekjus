@@ -1,0 +1,11 @@
+<div class="container">
+  <h1> Create new park </h1>
+
+<!-- If go to the browser and inspect the form, will notice that  -->
+  <%= bootstrap_form_for(@new_park) do |f| %>
+    <%= f.text_field :name, label: 'Park Name', placeholder: 'Enter the park name'%>
+    <%= f.text_field :description%>
+    <%= f.text_field :picture, help: "Please enter valid url", icon:"user"%>
+    <%= f.submit "Submit" %>
+  <%end%>
+</div>

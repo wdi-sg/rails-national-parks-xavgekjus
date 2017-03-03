@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h1>Edit : <%=@found_park.name%></h1>
+  <div class="container">
+
+  <!-- If go to the browser and inspect the form, will notice that  -->
+    <%= bootstrap_form_for(@found_park, method: :put) do |f| %>
+      <%= f.text_field :name, label: 'Park Name'%>
+      <%= f.text_field :description%>
+      <%= f.text_field :picture, help: "Please enter valid url", icon:"user"%>
+      <%= f.submit "Submit" %>
+    <%end%>
+  </div>
+
+
+
+</div>

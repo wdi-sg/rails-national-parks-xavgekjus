@@ -1,0 +1,9 @@
+//All styles related to homepage here.
+
+#homepage { //Encapsulate homepage erb page with a giant div with this id
+  div {
+    // Nest stuff here.
+    background-color: green;
+  }
+
+}

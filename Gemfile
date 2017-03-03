@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 gem 'pry'
+gem 'faker'
+gem 'bootstrap-sass'   #from https://github.com/twbs/bootstrap-sass
+gem 'bootstrap_form'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
@@ -48,6 +51,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  #custom development guard    #SETTING UP SOMETHING SIMILAR TO NODEMON!! After this ,
+  # type guard init to create Guardfile in root directory.
+  gem 'guard', :require => false
+  gem 'guard-livereload', :require => false
+  gem 'rack-livereload'
+  gem 'rb-fsevent', :require => false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
